@@ -1,4 +1,4 @@
-package com.tenure;
+package org.unlaxer.tenure;
 
 /**
  * Base interface for all events in Tenure.

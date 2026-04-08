@@ -3,18 +3,18 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.tenure</groupId>
+    <groupId>org.unlaxer</groupId>
     <artifactId>tenure</artifactId>
     <version>0.1.0</version>
     <packaging>jar</packaging>
 
-    <n>Tenure</n>
+    <name>Tenure</name>
     <description>Entity lifecycle library with event sourcing, inspired by Pat Helland</description>
     <url>https://github.com/opaopa6969/tenure</url>
 
     <licenses>
         <license>
-            <n>MIT</n>
+            <name>MIT</name>
         </license>
     </licenses>
 

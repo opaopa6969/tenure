@@ -1,4 +1,4 @@
-package com.tenure;
+package org.unlaxer.tenure;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -28,6 +28,7 @@ class UserLifecycleTest {
 
     EntityDefinition<UserState> userDef() {
         return Tenure.define("User", UserState::empty, "Registered")
+            .terminal("Deleted")
             .on(EmailVerified.class).from("Registered").to("Verified")
                 .apply((state, event) -> state.withEmail(event.email()))
             .on(PlanSelected.class).from("Verified").to("Trial")
@@ -44,7 +45,7 @@ class UserLifecycleTest {
             .build();
     }
 
-    // ─── Tests ──────────────────────────────────────────
+    // ─── Original Tests (preserved) ─────────────────────
 
     @Test
     void happyPath() {

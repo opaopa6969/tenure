@@ -1,4 +1,4 @@
-package com.tenure;
+package org.unlaxer.tenure;
 
 public class TenureException extends RuntimeException {
     private final String code;
